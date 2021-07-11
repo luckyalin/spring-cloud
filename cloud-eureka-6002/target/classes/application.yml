@@ -1,13 +1,13 @@
 spring:
   application:
-    name: eureka6001
+    name: eureka6002
 server:
-  port: 6001
+  port: 6002
 eureka:
   instance:
-    hostname: eureka6001.com
+    hostname: eureka6002.com
   client:
     fetch-registry: false  #不从eureka拉取服务
     register-with-eureka: false #不向注册中心注册自己
     service-url:
-      defaultZone: http://eureka6002.com:6002/eureka
+      defaultZone: http://eureka6001.com:6001/eureka

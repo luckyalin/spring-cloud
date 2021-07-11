@@ -6,8 +6,15 @@ server:
 eureka:
   instance:
     hostname: eureka6001.com
+    instance-id: eureka6001  #服务主机名 此配置会显示在eureka控制台status
+    prefer-ip-address: true  #显示ip地址
   client:
     fetch-registry: false  #不从eureka拉取服务
     register-with-eureka: false #不向注册中心注册自己
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+      defaultZone: http://eureka6002.com:6002/eureka
+  server:
+    enable-self-preservation: true  #是否开启自我保护机制
+    eviction-interval-timer-in-ms: 2000 #清理无效节点的时间间隔
+#通过访问地址健康检查
+#host:port/actuator/health

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consumer9001
+server:
+  port: 9001
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka6001.com:6001/eureka,http://eureka6002.com:6002/eureka

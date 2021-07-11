@@ -11,6 +11,10 @@
         <module>cloud-common</module>
         <module>cloud-eureka-6001</module>
         <module>cloud-provider-8001</module>
+        <module>cloud-consumer-9001</module>
+        <module>cloud-consumer-9002</module>
+        <module>cloud-provider-8002</module>
+        <module>cloud-eureka-6002</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -24,6 +28,7 @@
         <mybatis-plus>3.4.2</mybatis-plus>
         <druid>1.1.22</druid>
         <mysql>8.0.23</mysql>
+        <ribbon>2.2.8.RELEASE</ribbon>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -66,13 +71,17 @@
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
+                <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
             </dependency>
         </dependencies>
     </dependencyManagement>
