@@ -11,7 +11,8 @@ import lombok.Data;
  */
 @AllArgsConstructor
 public enum ExceptionEnum {
-    NOT_FOUND("404","资源不存在");
+    NOT_FOUND("404","资源不存在"),
+    BUSY("601","服务器繁忙");
     private String code;
     private String message;
 

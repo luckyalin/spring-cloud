@@ -15,6 +15,7 @@
         <module>cloud-consumer-9002</module>
         <module>cloud-provider-8002</module>
         <module>cloud-eureka-6002</module>
+        <module>cloud-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -78,10 +79,6 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
             </dependency>
         </dependencies>
     </dependencyManagement>
