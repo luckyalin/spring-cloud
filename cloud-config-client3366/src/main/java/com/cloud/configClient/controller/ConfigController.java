@@ -17,7 +17,6 @@ public class ConfigController {
 
     @GetMapping
     private CommonResult<Object> getConfig(){
-        return CommonResult.success(config.getPort() + "    " + config.getConfigInfo());
+        return CommonResult.success(config.getPort() + "    " +config.getConfigInfo());
     }
-
 }
