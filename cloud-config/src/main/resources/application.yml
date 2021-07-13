@@ -1,0 +1,19 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: spring-cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/luckyalin/spring-cloud-config.git #配置git地址
+          search-paths:
+            - spring-cloud-config  #配置仓库名称
+          force-pull: true
+          username: 1157814180@qq.com  #git账户名
+          password: lyl18839522936  #配置密码
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka6001.com:6001/eureka,http://eureka6002.com:6002/eureka

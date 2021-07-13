@@ -16,6 +16,7 @@
         <module>cloud-provider-8002</module>
         <module>cloud-eureka-6002</module>
         <module>cloud-gateway</module>
+        <module>cloud-config</module>
     </modules>
     <packaging>pom</packaging>
 
